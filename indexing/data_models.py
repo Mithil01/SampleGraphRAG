@@ -15,6 +15,11 @@ class EntityModel(BaseModel):
     """
     This model represents an entity extracted from a text chunk
     """
+    class Config:
+        arbitrary_types_allowed = True
+
+    my_async_generator: typing.AsyncGenerator[str, None]
+    
     name: str = Field(
         description="Name of the entity, capitalized"
     )
