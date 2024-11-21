@@ -5,6 +5,6 @@ openai
 networkx
 graspologic
 future
-dotenv
+python-dotenv
 plotly
 pandas
